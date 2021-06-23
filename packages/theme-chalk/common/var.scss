@@ -1,0 +1,58 @@
+@import './config.scss';
+@import './colors.scss';
+
+// Colors
+$primary-color: $blue-6 !default;
+$success-color: $green-6 !default;
+$info-color: #aaaaaa !default;
+$warning-color: $yellow-6 !default;
+$danger-color: $red-6 !default;
+$white: #fff !default;
+$black: #000 !default;
+
+// Base
+$body-background: #fff !default;
+$component-background: #fff !default;
+$font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+  '微软雅黑', Arial, sans-serif !default;
+$code-family: Consolas, Menlo, Courier, monospace !default;
+
+$font-size-base: 14px !default;
+$font-size-small: 12px !default;
+$font-size-lg: $font-size-base + 2px !default;
+$border-radius-base: 6px !default;
+$border-radius-small: 4px !default;
+$cursor-disabled: not-allowed !default;
+
+// color
+$title-color: #222 !default;
+$text-color: #666 !default;
+$text-color-secondary: #999 !default;
+$text-color-placeholder: #aaa !default;
+
+// vertical margins
+$margin-lg: 24px !default; // containers
+$margin-md: 16px !default; // small containers and buttons
+$margin-sm: 12px !default; // Form controls and items
+$margin-xs: 8px !default; // small items
+
+// vertical paddings
+$padding-lg: 24px !default; // containers
+$padding-md: 16px !default; // small containers and buttons
+$padding-sm: 12px !default; // Form controls and items
+$padding-xs: 8px !default; // small items
+
+// Border color
+$border-color-base: #dcdee2 !default; // outside
+$border-color-split: #e8eaec !default; // inside
+$border-width-base: 1px !default; // width of the border for a component
+$border-style-base: solid !default; // style of a components border
+
+// Shadow
+$shadow-color: rgba(0, 0, 0, 0.2) !default;
+$shadow-card: 0 1px 1px 0 rgba(0, 0, 0, 0.1) !default;
+$shadow-up: 0 -1px 6px $shadow-color !default;
+$shadow-down: 0 1px 6px $shadow-color !default;
+$shadow-left: -1px 0 6px $shadow-color !default;
+$shadow-right: 1px 0 6px $shadow-color !default;
+$shadow-base: $shadow-down !default;

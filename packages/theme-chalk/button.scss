@@ -1,0 +1,97 @@
+@import './common/mixin.scss';
+
+@include b(button) {
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.1s;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid transparent;
+
+  & + & {
+    margin-left: 10px;
+  }
+
+  // type
+  @include m(default) {
+    color: $text-color;
+    background: #fff;
+    border: 1px solid $border-color-base;
+
+    &:hover:not(.#{$namespace}-button--disabled) {
+      background: $blue-1;
+      border-color: $blue-2;
+      color: $primary-color;
+    }
+  }
+  @include m(primary) {
+    color: #fff;
+    background: $primary-color;
+    border-color: $primary-color;
+
+    &:hover:not(.#{$namespace}-button--disabled) {
+      background: $blue-5;
+      border-color: $blue-5;
+      color: #fff;
+    }
+  }
+  @include m(success) {
+    color: #fff;
+    background: $success-color;
+    border-color: $success-color;
+
+    &:hover:not(.#{$namespace}-button--disabled) {
+      background: $green-5;
+      border-color: $green-5;
+      color: #fff;
+    }
+  }
+  @include m(warning) {
+    color: #fff;
+    background: $warning-color;
+    border-color: $warning-color;
+
+    &:hover:not(.#{$namespace}-button--disabled) {
+      background:  $yellow-5;
+      border-color:  $yellow-5;
+      color: #fff;
+    }
+  }
+  @include m(danger) {
+    color: #fff;
+    background: $danger-color;
+    border-color: $danger-color;
+
+    &:hover:not(.#{$namespace}-button--disabled) {
+      background: $red-5;
+      border-color: $red-5;
+      color: #fff;
+    }
+  }
+
+  // size
+  @include m(mini) {
+    height: 26px;
+    padding: 0 8px;
+  }
+  @include m(small) {
+    height: 30px;
+    padding: 0 10px;
+  }
+  @include m(medium) {
+    height: 34px;
+    padding: 0 14px;
+  }
+  @include m(large) {
+    height: 38px;
+    padding: 0 16px;
+  }
+
+  // round
+  &.is-round {
+    border-radius: 25px;
+  }
+}

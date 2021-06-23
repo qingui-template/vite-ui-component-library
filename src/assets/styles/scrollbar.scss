@@ -1,0 +1,17 @@
+::-webkit-scrollbar {
+  /* 滚动条宽 */
+  width: 6px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* 滚动条 拖动条 */
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  /* 滚动条背景槽 */
+  background-color: #eee;
+  border-radius: 6px;
+}

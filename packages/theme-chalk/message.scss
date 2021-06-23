@@ -1,0 +1,35 @@
+@import './common/mixin.scss';
+
+@include b(message) {
+  display: flex;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 300px;
+  border-radius: 5px;
+  transition: 0.4s ease;
+
+  @include m(success) {
+    background: $--color-success;
+  }
+  @include m(warning) {
+    background: $--color-warning;
+  }
+  @include m(info) {
+    background: green;
+  }
+  @include m(error) {
+    background: $--color-danger;
+  }
+
+  @include when(center) {
+    justify-content: center;
+  }
+}
+
+.qing-message-fade-enter-from,
+.qing-message-fade-leave-to {
+  opacity: 0;
+  transform: translate(-50%, -100%);
+}
