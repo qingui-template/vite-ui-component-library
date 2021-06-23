@@ -1,6 +1,6 @@
 # UI 组件库和文档示例模板
 
-[在线地址](http://nonol.gitee.io/nav/#/)
+[在线地址](http://nonol.gitee.io/nav)
 ## 快速开始
 ```sh
 # 安装依赖
